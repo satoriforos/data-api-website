@@ -1,0 +1,13 @@
+djangorestframework=3.9.2
+pymysql=0.9.2
+stripe
+validate_email
+requests
+sendgrid
+jinja2
+phonenumbers
+twilio
+usaddress
+pandas
+
+#python3-nltk (via apt-get)

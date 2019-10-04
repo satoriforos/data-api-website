@@ -1,0 +1,95 @@
+{% extends "layout_default.jinja.htm" %}
+{% block title %}Pricing | API Site{% endblock %}
+{% block content %}
+		<article id="hero">
+			<section class="container">
+				<h1>Pricing</h1>
+				<p>
+					From startup to enterprise, We offer a variety of packages to grow with you.
+				</p>
+			</section>
+		</article>
+
+		<article id="pricing">
+			<section class="container">
+
+				<h2>Plans that scale with your needs</h2>
+
+				<div class="card-deck text-center">
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header">
+							<h4>Free</h4>
+						</div>
+						<div class="card-body">
+							<div class="card-title pricing-card-title">
+								<span class="currency">$</span>
+								0 <span class="text-muted">/ mo</span>
+							</div>
+							<ul class="list-unstyled mt-3 mb-4">
+								<li>100 API calls</li>
+								<li>&nbsp;</li>
+								<li>&nbsp;</li>
+								<li>&nbsp;</li>
+							</ul>
+							<a class="btn btn-primary btn-lg" href="/account/register?plan=free" role="button">Sign up</a>
+						</div>
+					</div>
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header">
+							<h4>Basic</h4>
+						</div>
+						<div class="card-body">
+							<div class="card-title pricing-card-title">
+								<span class="currency">$</span>
+								25 <span class="text-muted">/ mo</span>
+							</div>
+							<ul class="list-unstyled mt-3 mb-4">
+								<li>1,000 API calls</li>
+								<li>Limited support</li>
+								<li>Total population counts</li>
+								<li>&nbsp;</li>
+							</ul>
+							<a class="btn btn-primary btn-lg" href="/account/register?plan=basic" role="button">Sign up</a>
+						</div>
+					</div>
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header">
+							<h4>Standard</h4>
+						</div>
+						<div class="card-body">
+							<div class="card-title pricing-card-title">
+								<span class="currency">$</span>
+								50 <span class="text-muted">/ mo</span>
+							</div>
+							<ul class="list-unstyled mt-3 mb-4">
+								<li>5,000 API calls</li>
+								<li>Limited support</li>
+								<li>Total population counts</li>
+								<li>Historical data</li>
+							</ul>
+							<a class="btn btn-primary btn-lg" href="/account/register?plan=standard" role="button">Sign up</a>
+						</div>
+					</div>
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header">
+							<h4>Business</h4>
+						</div>
+						<div class="card-body">
+							<div class="card-title pricing-card-title">
+								<span class="currency">$</span>
+								100 <span class="text-muted">/ mo</span>
+							</div>
+							<ul class="list-unstyled mt-3 mb-4">
+								<li>20,000 API calls</li>
+								<li>Limited support</li>
+								<li>Total population counts</li>
+								<li>Historical data</li>
+							</ul>
+							<a class="btn btn-primary btn-lg" href="/account/register?plan=business" role="button">Sign up</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</article>
+{% endblock content %}

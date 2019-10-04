@@ -1,0 +1,154 @@
+{% extends "layout_default.jinja.htm" %}
+{% block title %}API Site{% endblock %}
+{% block head %}
+{{ super() }}
+		<script src="assets/scripts/test_api.js"></script>
+{% endblock head %}
+{% block content %}
+	<article id="hero">
+		<div class="hero_overlay">
+			<section class="container">
+				<div class="hero_overlay_container">
+					<h1><em>Add demographic information to your customer insights</em></h1>
+					<p class="subtitle">
+						Enrich your contact lists with intelligent demographics.
+					</p>
+				</div>
+				<div class="hero_overlay_container_right">
+					<p>
+						<a class="btn btn-primary btn-lg" href="/account/register" role="button">Sign Up Free</a>
+						<a class="btn btn-primary btn-lg" href="https://api.example.com/v1/" role="button">API Documentation</a>
+					</p>
+				</div>
+			</section>
+		</div>
+	</article>
+
+	<article id="try_it_out">
+		<section class="container">
+			<h2>Try It Out</h2>
+			<p>
+				Use the form below to see what the API can do.
+			</p>
+			<div id="try_it_form_error" class="form_error start_hidden">
+				There was a problem processing your request
+			</div>
+			<div id="try_it_webhook_required" class="form_alert start_hidden">
+				This data can only be fully accessed with a webhook callback.
+			</div>
+			<form id="try_api" action="" method="get">
+				<div class="form_row" id="function_container">
+					<label for="function_name">I would like to find:</label>
+					<select id="function_name" class="styled_combobox">
+						<option>Select function...</option>
+						<option value="age">Age Ranges</option>
+						<option value="ancestry">Ancestries</option>
+						<option value="crime">Crime Types</option>
+						<option value="education">Education levels</option>
+						<option value="gender">Gender Ratios</option>
+						<option value="healthInsurance">Health Coverage</option>
+						<option value="income">Income Levels</option>
+						<option value="population">Population Rates</option>
+						<option value="race">Races</option>
+						<option value="voting">Voting history</option>
+					</select>
+				</div>
+				<div class="form_row" id="location_typ_container">
+					<label for="location_type">for:</label>
+					<select id="location_type" class="styled_combobox">
+						<option>Select function...</option>
+						<option value="zip">a ZIP Code</option>
+						<option value="city">a City</option>
+						<option value="state">a State</option>
+						<option value="country">The USA</option>
+					</select>
+				</div>
+
+				<div class="form_row start_hidden" id="zip_container">
+					<label for="company">ZIP Code</label>
+					<input type="number" id="zip" name="zip" placeholder="90210" required />
+				</div>
+				<div class="form_row start_hidden" id="city_container">
+					<label for="city">City Name</label>
+					<input type="text" id="city" name="city" placeholder="Beverly Hills" required />
+				</div>
+				<div class="form_row start_hidden" id="state_container">
+					<label for="state">State Code</label>
+					<input type="text" id="state" name="state" placeholder="CA" required />
+				</div>
+				<div class="form_row start_hidden" id="submit_button_container">
+					<input id="try_api_submit" type="submit" value="Try it out" class="btn-primary btn" />
+				</div>
+
+			</form>
+			<div class="output start_hidden">
+				<h3>Output</h3>
+				<p>This is the JSON result from your function call</p>
+				<div id="json_output">
+				</div>
+
+				<div id="documentation_link_container">
+					<p class="documentation_link" id="documentation_link">
+						View <a href="#">the code for this request</a>
+					</p>
+				</div>
+
+			</div>
+		</section>
+	</article>
+
+	<article id="features">
+		<section class="container">
+			<h2>Get more out of your contacts</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Powerful and Scalable</h3>
+					<p>From a thousand requests a month to several million a day &mdash; our scalable cloud infrastructure has got you covered at any stage.</p>
+				</div>
+				<div class="col-md-3">
+					<h3>State-of-the-art</h3>
+					<p>Advanced machine learning is used to analyze data in real-time and deliver the most reliable information possible.</p>
+				</div>
+				<div class="col-md-3">
+					<h3>Integrate in Minutes</h3>
+					<p>Powerful and complex on the inside, simple on the outside &mdash; our sleek JSON API design will get you up and running in under 10 minutes.</p>
+				</div>
+				<div class="col-md-3">
+					<h3>Easy on your budget</h3>
+					<p>Lead Enrichment is becoming a business necessity. Make 100 requests a month for free &mdash; need more? Premium plans start at just $10.</p>
+				</div>
+			</div>
+		</section>
+	</article>
+
+	<article id="more_reasons">
+		<section class="container">
+			<h2>Your one-stop shop for demographic information</h2>
+			<p>
+			With our API you can determine:
+			</p>
+			<ul>
+				<li>Political leaning and income</li>
+				<li>Age and gender</li>
+				<li>Crime and education</li->
+				<li>Population size and health insurance coverage rates</li>
+			</ul>
+			</div>
+		</section>
+	</article>
+
+
+	<article id="call_to_action">
+		<section class="container">
+		
+			<div class="row">
+				<div class="col-md-8">
+					<p class="action">Add demographic information to your customer insights now &mdash; it's free</p>
+				</div>
+				<div class="col-md-4">
+					<a href="/account/register" class="btn">Get Free API Key</a>
+				</div>
+			</div>
+		</section>
+	</article>
+{% endblock content %}
